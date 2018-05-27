@@ -33,16 +33,18 @@
 
 .App .card{
   border-radius: 0rem;
-  border-color: black;
-  border-width: 0.10rem;
+  margin: 0.10rem;
 
+}
+
+.App .card .CardImg{
+  max-height: 200px;
 }
 
 .App Button {
 
     border-radius: 0;
-    background-color: blue;
-    border-color: blue;
+
   }
 
   .App .footer {
@@ -57,4 +59,8 @@
       color: white;
       font-family: sans-serif;
       margin: 1.00rem;
+  }
+
+  .App .card .body .inverse {
+       margin: 3.00rem;
   }

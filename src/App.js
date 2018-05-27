@@ -5,46 +5,74 @@ import { Button } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import { Table } from 'reactstrap';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-
-
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import { Alert } from 'reactstrap';
+import Pulse from 'react-reveal/Pulse';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   render() {
     return (
 
 
 
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">React Bootstrap Store</h1>
-        </header>
 
-        <Card body inverse style={{ backgroundColor: 'blue', borderColor: '#333' }}>
-        <CardTitle>Welcome to ReactBootstrapStore</CardTitle>
-        <CardText>
-
-
-
-         Currently under construction.
-         Stay tuned for: Stripe API, CosmicJS API, and Blog Tutorial.
-
-
-
-        </CardText>
-
-      </Card>
-
-
-
+        <div>
+        <Navbar color="dark" dark expand="md">
+          <NavbarBrand href="/">React Art Store <img src={logo} className="App-logo" alt="logo" /></NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/components/">Components</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/jahopp23/react-bootstrap-store">GitHub</NavLink>
+              </NavItem>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  Filter by Category
+                  </DropdownToggle>
+                  <DropdownMenu right>
+                    <DropdownItem>
+                      Graphic Design
+                      </DropdownItem>
+                      <DropdownItem>
+                        Photography
+                        </DropdownItem>
+                        <DropdownItem>
+                          Painting
+                          </DropdownItem>
+                        </DropdownMenu>
+                      </UncontrolledDropdown>
+                    </Nav>
+                  </Collapse>
+                </Navbar>
+              </div>
+        <Alert color="primary">
+           Welcome to the React Store! v1.0.0 is currently under construction. Stay tuned for: Stripe API, CosmicJS API, and blog tutorial. </Alert>
 
         <Table borderless>
           <tbody>
             <tr>
               <td>
                 <div>
+                 <Pulse>
                   <Card class="card">
-                    <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                    <CardImg top width="100%" height="300" src="https://scontent-dfw5-2.cdninstagram.com/vp/9e8498df96757e7885cdd867be934246/5BA1ED4E/t51.2885-15/e35/32968469_254736341751541_1271481233544577024_n.jpg" alt="Card image cap" />
                     <CardBody>
                       <CardTitle>Product #1</CardTitle>
                       <CardSubtitle>BrandName </CardSubtitle>
@@ -52,13 +80,16 @@ class App extends Component {
                           <Button>Purchase</Button>
                       </CardBody>
                   </Card>
+                  </Pulse>
                 </div>
 
                </td>
               <td>
               <div>
+              <Pulse>
               <Card>
-                  <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+
+                  <CardImg top width="100%" height="300" src="https://scontent-dfw5-2.cdninstagram.com/vp/f516fc11a8970e81f2cfe7829d343f00/5BA85519/t51.2885-15/e35/21148045_1466350423445641_6171281784265768960_n.jpg" alt="Card image cap" />
                 <CardBody>
 
                   <CardTitle>Product #1</CardTitle>
@@ -67,14 +98,16 @@ class App extends Component {
                       <Button>Purchase</Button>
                   </CardBody>
               </Card>
+              </Pulse>
             </div>
 
 
               </td>
               <td>
               <div>
+              <Pulse>
               <Card>
-                   <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+                   <CardImg top width="100%" height="300" src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/4b5aa9effb511ffe0073e8672c91f339/f3565a44-1dd1-4664-ac9d-d772f8fa9dbd_rw_3840.jpg?h=31d93a4e7f2788af1673941f18d52855" alt="Card image cap" />
                 <CardBody>
                   <CardTitle>Product #1</CardTitle>
                   <CardSubtitle>BrandName </CardSubtitle>
@@ -82,6 +115,7 @@ class App extends Component {
                       <Button>Purchase</Button>
                   </CardBody>
               </Card>
+              </Pulse>
             </div>
 
 
@@ -90,6 +124,7 @@ class App extends Component {
             <tr>
              <td>
             <div>
+             <Pulse>
              <Card>
                   <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                <CardBody>
@@ -100,12 +135,14 @@ class App extends Component {
                      <Button>Purchase</Button>
                  </CardBody>
              </Card>
+             </Pulse>
            </div>
 
 
               </td>
              <td>
             <div>
+            <Pulse>
              <Card>
                   <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                <CardBody>
@@ -115,6 +152,7 @@ class App extends Component {
                      <Button>Purchase</Button>
                  </CardBody>
              </Card>
+             </Pulse>
            </div>
 
 
@@ -122,6 +160,7 @@ class App extends Component {
               </td>
              <td>
              <div>
+             <Pulse>
              <Card>
                    <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                <CardBody>
@@ -131,6 +170,7 @@ class App extends Component {
                      <Button>Purchase</Button>
                  </CardBody>
              </Card>
+             </Pulse>
            </div>
 
 
@@ -155,7 +195,7 @@ class App extends Component {
            <p className="footer-text">
            Built by <a href="https://johnallenhopper.now.sh/">John A. Hopper</a> <code>under construction</code>
                  </p>
-            <strong><a className="github" href="https://github.com/jahopp23/react-bootstrap-store">github</a></strong>
+
              </div>
 
 
