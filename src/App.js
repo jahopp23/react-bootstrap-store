@@ -20,12 +20,31 @@ class App extends Component {
           <h1 className="App-title">React Bootstrap Store</h1>
         </header>
 
+        <Card body inverse style={{ backgroundColor: 'blue', borderColor: '#333' }}>
+        <CardTitle>Welcome to ReactBootstrapStore</CardTitle>
+        <CardText>
+
+
+
+         Currently under construction.
+         Stay tuned for: Stripe API, CosmicJS API, and Blog Tutorial.
+
+
+
+        </CardText>
+
+      </Card>
+
+
+
+
         <Table borderless>
           <tbody>
             <tr>
               <td>
                 <div>
                   <Card class="card">
+                    <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                     <CardBody>
                       <CardTitle>Product #1</CardTitle>
                       <CardSubtitle>BrandName </CardSubtitle>
@@ -39,7 +58,9 @@ class App extends Component {
               <td>
               <div>
               <Card>
+                  <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                 <CardBody>
+
                   <CardTitle>Product #1</CardTitle>
                   <CardSubtitle>BrandName </CardSubtitle>
                     <CardText>Product #1 Description</CardText>
@@ -53,6 +74,7 @@ class App extends Component {
               <td>
               <div>
               <Card>
+                   <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                 <CardBody>
                   <CardTitle>Product #1</CardTitle>
                   <CardSubtitle>BrandName </CardSubtitle>
@@ -69,7 +91,9 @@ class App extends Component {
              <td>
             <div>
              <Card>
+                  <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                <CardBody>
+
                  <CardTitle>Product #1</CardTitle>
                  <CardSubtitle>BrandName </CardSubtitle>
                    <CardText>Product #1 Description</CardText>
@@ -83,6 +107,7 @@ class App extends Component {
              <td>
             <div>
              <Card>
+                  <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                <CardBody>
                  <CardTitle>Product #1</CardTitle>
                  <CardSubtitle>BrandName </CardSubtitle>
@@ -98,6 +123,7 @@ class App extends Component {
              <td>
              <div>
              <Card>
+                   <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
                <CardBody>
                  <CardTitle>Product #1</CardTitle>
                  <CardSubtitle>BrandName </CardSubtitle>
@@ -111,60 +137,28 @@ class App extends Component {
 
               </td>
             </tr>
-            <tr>
-              <td>
-              <div>
-              <Card>
-                <CardBody>
-                  <CardTitle>Product #1</CardTitle>
-                  <CardSubtitle>BrandName </CardSubtitle>
-                    <CardText>Product #1 Description</CardText>
-                      <Button>Purchase</Button>
-                  </CardBody>
-              </Card>
-            </div>
 
 
 
-              </td>
-              <td>
-              <div>
-              <Card>
-                <CardBody>
-                  <CardTitle>Product #1</CardTitle>
-                  <CardSubtitle>BrandName </CardSubtitle>
-                    <CardText>Product #1 Description</CardText>
-                      <Button>Purchase</Button>
-                  </CardBody>
-              </Card>
-            </div>
 
 
 
-              </td>
-              <td>
-              <div>
-              <Card>
-                <CardBody>
-                  <CardTitle>Product #1</CardTitle>
-                  <CardSubtitle>BrandName </CardSubtitle>
-                    <CardText>Product #1 Description</CardText>
-                      <Button>Purchase</Button>
-                  </CardBody>
-              </Card>
-            </div>
 
 
 
-              </td>
-            </tr>
             </tbody>
           </Table>
 
 
-        <p className="App-intro">
-           Built by <a href="https://johnallenhopper.now.sh/">John A. Hopper</a>
-        </p>
+
+          <div className="footer">
+           <p className="footer-text">
+           Built by <a href="https://johnallenhopper.now.sh/">John A. Hopper</a> <code>under construction</code>
+                 </p>
+            <strong><a className="github" href="https://github.com/jahopp23/react-bootstrap-store">github</a></strong>
+             </div>
+
+
       </div>
     );
   }
