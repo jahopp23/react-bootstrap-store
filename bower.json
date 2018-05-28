@@ -1,0 +1,27 @@
+{
+  "name": "react-bootstrap-store",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "authors": [
+    "John A. Hopper"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "bootstrap",
+    "4",
+    "cosmicjs",
+    "express",
+    "stripe",
+    "node"
+  ],
+  "homepage": "https://github.com/jahopp23/react-bootstrap-store",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
