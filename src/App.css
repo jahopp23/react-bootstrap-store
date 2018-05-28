@@ -37,7 +37,7 @@
 
 }
 
-.App .card .CardImg{
+.App .CardImg{
   max-height: 200px;
 }
 
@@ -64,3 +64,8 @@
   .App .card .body .inverse {
        margin: 3.00rem;
   }
+
+.App .StripeCheckout {
+   margin: 1.00em;
+   border-radius: 0px;
+}

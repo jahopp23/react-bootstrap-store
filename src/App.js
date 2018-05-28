@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button } from 'reactstrap';
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import { Table } from 'reactstrap';
-import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { Alert } from 'reactstrap';
 import Pulse from 'react-reveal/Pulse';
+import Checkout from './Checkout';
+import { Button } from 'reactstrap';
 
 class App extends Component {
   constructor(props) {
@@ -71,13 +71,20 @@ class App extends Component {
               <td>
                 <div>
                  <Pulse>
-                  <Card class="card">
+                  <Card className="card">
                     <CardImg top width="100%" height="300" src="https://scontent-dfw5-2.cdninstagram.com/vp/9e8498df96757e7885cdd867be934246/5BA1ED4E/t51.2885-15/e35/32968469_254736341751541_1271481233544577024_n.jpg" alt="Card image cap" />
                     <CardBody>
                       <CardTitle>Product #1</CardTitle>
                       <CardSubtitle>BrandName </CardSubtitle>
                         <CardText>Product #1 Description</CardText>
-                          <Button>Purchase</Button>
+
+                        <Checkout className="checkout-btn"
+                             name={'Chromatic Lip Graphic Design Print'}
+                             description={'11 x 17 graphic design print.'}
+                             brand={'Edel Anthony'}
+                           amount={150}/>
+
+
                       </CardBody>
                   </Card>
                   </Pulse>
@@ -95,7 +102,12 @@ class App extends Component {
                   <CardTitle>Product #1</CardTitle>
                   <CardSubtitle>BrandName </CardSubtitle>
                     <CardText>Product #1 Description</CardText>
-                      <Button>Purchase</Button>
+
+
+                          <Checkout
+                            name='{Rene Mejia Face Graphic Design}'
+                            description='{11 x 17 graphic design print}'
+                            />
                   </CardBody>
               </Card>
               </Pulse>
@@ -112,7 +124,11 @@ class App extends Component {
                   <CardTitle>Product #1</CardTitle>
                   <CardSubtitle>BrandName </CardSubtitle>
                     <CardText>Product #1 Description</CardText>
-                      <Button>Purchase</Button>
+
+                      <Checkout
+                        name='{Rene Mejia Face Graphic Design}'
+                        description='{11 x 17 graphic design print}'
+                        />
                   </CardBody>
               </Card>
               </Pulse>
@@ -123,55 +139,18 @@ class App extends Component {
             </tr>
             <tr>
              <td>
-            <div>
-             <Pulse>
-             <Card>
-                  <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-               <CardBody>
-
-                 <CardTitle>Product #1</CardTitle>
-                 <CardSubtitle>BrandName </CardSubtitle>
-                   <CardText>Product #1 Description</CardText>
-                     <Button>Purchase</Button>
-                 </CardBody>
-             </Card>
-             </Pulse>
-           </div>
-
-
-              </td>
-             <td>
-            <div>
-            <Pulse>
-             <Card>
-                  <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-               <CardBody>
-                 <CardTitle>Product #1</CardTitle>
-                 <CardSubtitle>BrandName </CardSubtitle>
-                   <CardText>Product #1 Description</CardText>
-                     <Button>Purchase</Button>
-                 </CardBody>
-             </Card>
-             </Pulse>
-           </div>
 
 
 
               </td>
              <td>
-             <div>
-             <Pulse>
-             <Card>
-                   <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-               <CardBody>
-                 <CardTitle>Product #1</CardTitle>
-                 <CardSubtitle>BrandName </CardSubtitle>
-                   <CardText>Product #1 Description</CardText>
-                     <Button>Purchase</Button>
-                 </CardBody>
-             </Card>
-             </Pulse>
-           </div>
+
+
+
+
+              </td>
+             <td>
+
 
 
 
