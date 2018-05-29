@@ -19,15 +19,18 @@ const errorPayment = data => {
   console.log(data);
 };
 
-const onToken = (name, brand, description, amount) => token =>
+const onToken = (name, brand, description, amount, category, channel, author, slug) => token =>
   axios.post(PAYMENT_SERVER_URL,
     {
       name,
       brand,
+      amount: fromDollarToCent(amount),
       description,
+      category,
+      author,
       source: token.id,
       currency: CURRENCY,
-      amount: fromDollarToCent(amount)
+
     })
     .then(successPayment)
     .catch(errorPayment);
