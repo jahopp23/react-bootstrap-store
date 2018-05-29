@@ -33,7 +33,7 @@ const Product = ({ completed, image, title, slug, author, brand, description, ca
 }
 
 Product.propTypes = {
-  title: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
