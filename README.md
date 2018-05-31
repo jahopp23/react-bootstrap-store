@@ -1,3 +1,8 @@
+EDIT: 
+/src/constants/stripe.js 
+#insert Stripe API Key from account.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
