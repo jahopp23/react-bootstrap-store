@@ -12,7 +12,7 @@ function receiveSlug(json) {
   const slug = {
     'name': json.metadata.name.title,
     'brand': json.metadata.brand.title,
-    'price': json.metadata.price.title,
+    'amount': json.metadata.price.title,
     'description': json.metadata.description.title,
     'author': json.metadata.author.title,
     'image': json.metadata.hero.url,

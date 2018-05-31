@@ -13,9 +13,12 @@ function receiveProducts(json) {
     type: 'RECEIVE_PRODUCTS',
     posts: json.map(data => {
       data.author = data.metadata.author.title;
+      data.slug = data.metadata.slug.title;
+      data.amount = data.metadata.amount.title;
       data.brand = data.metadata.brand.title;
       data.description = data.metadata.description;
       data.image = data.metadata.image.url;
+      data.category = data.metadata.category.url;
       return data
     }),
     receivedAt: Date.now()
